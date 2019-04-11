@@ -1,0 +1,5 @@
+this.props.children.length
+this.props.children
+this.props.children.map(
+    element=><p>{element.type}</p>
+)

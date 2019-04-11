@@ -1,0 +1,41 @@
+<div class="container">
+
+    <div class="row" style="color:white; background-color: rgb(139, 133, 190)">
+        <h2 class="text-center" style="margin-top: 20px">
+            Mobile Management System..!
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <br><br>
+            <router-outlet></router-outlet>
+        </div>
+
+        <div class="col-md-5">
+            <br><br>
+            <img src='../assets/images/main.jfif' alt="image not found" />
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-7">
+                <span class="text-danger">
+                    <strong> This site is copyright &copy; to LIT,
+                        All rights reserved here.
+                    </strong>
+                </span>
+            </div>
+
+            <div class="col-md-5">
+                <span class="text-primary text-right">
+                    <strong>{{todaysDate | date:'dd/MM/yy'}} |
+                        {{todaysDate | date:'shortTime'}}</strong>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</div>

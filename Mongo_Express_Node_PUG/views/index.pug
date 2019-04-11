@@ -1,0 +1,23 @@
+extends layout
+block content
+    div.row
+        div.col-md-6
+            table.table-striped.table-bordered.table-hover.table-responsive.text-center
+                tr
+                    th Id
+                    th Name
+                    th Department
+                    th Salary
+                    th(colspan='2') Action
+                each data, i in empData
+                    tr
+                        td=data.empID 
+                        td=data.empName 
+                        td=data.empDept 
+                        td=data.empSalary
+                        td
+                            a.btn.btn-primary.btn-sm(href="/searchemp/" + data._id) Edit
+                        td
+                            a.btn.btn-danger.btn-sm(href="/deleteemp/" + data._id) Delete
+            br
+            a.btn.btn-success.btn-sm(href='/add') Add Employee

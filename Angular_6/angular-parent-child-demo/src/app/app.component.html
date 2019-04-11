@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<marquee behavior="" direction="up" scrollamount="1000">Enter Passkey: 
+  <input type="password" [(ngModel)]="toggle"></marquee>
+
+
+<div *ngIf="toggle=='123456'">
+  <app-parent></app-parent>
+</div>
+
+
+<router-outlet></router-outlet>

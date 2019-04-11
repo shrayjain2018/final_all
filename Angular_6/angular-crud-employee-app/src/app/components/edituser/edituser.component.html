@@ -1,0 +1,90 @@
+<div class="col-md-6 col-md-offset-2">
+
+  <h3>Add User</h3>
+
+  <br />
+
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+
+      <label for="firstname">First Name:
+      </label>
+
+      <input type="text" class="form-control" formControlName="firstname" />
+
+      <div *ngIf="submitted && editForm.controls.firstname.errors" class="error">
+
+        <div class="text-danger" *ngIf="editForm.controls.firstname.errors.required">
+
+          FirstName is required ..
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="lastname">Last Name:
+      </label>
+
+      <input type="text" class="form-control" formControlName="lastname" />
+
+
+
+      <div *ngIf="submitted && editForm.controls.lastname.errors" class="error">
+
+        <div class="text-danger" *ngIf="editForm.controls.lastname.errors.required">
+
+          LastName is required ..
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="email">Email Address:
+      </label>
+
+      <input type="email" class="form-control" formControlName="email" />
+
+
+
+      <div *ngIf="submitted && editForm.controls.email.errors" class="error">
+
+        <div class="text-danger" *ngIf="editForm.controls.email.errors.required">
+
+          Email is required ..
+
+        </div>
+
+        <div class="text-danger" *ngIf="editForm.controls.email.errors.email">
+
+          Invalid Email ..
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <button class="btn btn-success">Update</button>
+    &nbsp;&nbsp;
+
+    <button class="btn btn-danger" type="reset">Cancel</button>
+
+    &nbsp;&nbsp;
+
+    <a class="btn btn-warning" [routerLink]="['/listuser']">Goto List</a>
+
+    <br /><br />
+
+  </form>
+
+</div>

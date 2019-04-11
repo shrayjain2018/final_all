@@ -1,0 +1,20 @@
+extends layout
+block content
+  div.row
+    div.col-md-4
+      h3 Add Employee
+      form(method='post',action='/emp/adddata')
+        #form.group
+          label Employee ID:
+          input.form-control(type="text",name="empID")
+        #form.group
+          label Employee Name:
+          input.form-control(type="text",name="empName")
+        #form.group
+          label Employee Department:
+          input.form-control(type="text",name="empDept")
+        #form.group
+          label Employee Salary:
+          input.form-control(type="text",name="empSalary")
+        br
+        input.btn.btn-success(type="submit",value="Save") 

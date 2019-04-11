@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+      <div class="col-lg-7">
+        <h2>Add New Task</h2>
+          <form  [formGroup]='addForm' (ngSubmit)="create()">
+              <div class="form-group">
+            <label>Task Name</label>
+            <input type="text" formControlName="todoName" name="todoName"
+            id="fname" class="form-control" placeholder="add here....!"/>  
+                    <div *ngIf='submitted && loginForm.controls.todoName.invalid' class="error" >
+            <div *ngIf='loginForm.controls.todoName.required' class="alert alert-warning" >
+              add some task </div>
+          </div>
+        </div>
+        
+  <button type="submit" class="btn btn-success" >Save</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="btn btn-warning" (click)='backToList()'>Go Back</button>
+  <!-- <button type="reset" class="btn btn-danger" >Cancel</button> -->
+
+
+</form>
+</div>
+</div>
+</div>

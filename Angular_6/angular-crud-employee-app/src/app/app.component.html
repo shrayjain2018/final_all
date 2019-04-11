@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="row">
+    <div style="color:white; background-color: rgb(139, 133, 190); padding:10px">
+      <h2 class="text-center" style="margin-top: 20px">
+        Employee Management System..!
+      </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-7">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-5">
+      <br />
+      <img src='../assets/images/4.jfif' />
+    </div>
+  </div>
+
+  <br><br>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-7">
+        <span class="text-danger">
+          <strong> This site is copyright &copy; to Trainee,
+            All rights reserved here.
+          </strong>
+        </span>
+      </div>
+      <div class="col-md-5">
+        <span class="text-primary text-right">
+          <strong>
+            {{todaysDate | date:'dd/MM/yy'}} |
+            {{todaysDate | date:'shortTime'}}
+          </strong>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</div>

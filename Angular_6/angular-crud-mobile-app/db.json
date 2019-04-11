@@ -1,0 +1,39 @@
+{
+  "user": [
+    {
+      "id": 3,
+      "email": "abhi",
+      "password": "abhi"
+    },
+    {
+      "id": 4,
+      "email": "shray",
+      "password": "new"
+    }
+  ],
+
+
+
+
+  
+  "product": [
+    {
+      "id": 1,
+      "name": "Samsung s-10",
+      "category": "smartphone",
+      "price": 75000
+    },
+    {
+      "id": 2,
+      "name": "Iphone X",
+      "category": "Smartphone",
+      "price": 80000
+    },
+    {
+      "id": 3,
+      "name": "aaa",
+      "category": "aas",
+      "price": "45"
+    }
+  ]
+}
